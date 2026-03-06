@@ -15,7 +15,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
   background-color: hsl(212, 45%, 89%);
 }
 
@@ -23,26 +23,24 @@ body {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  width: 320px;
-  height: 499px;
+  max-width: 20rem;
   background-color: hsl(0, 0%, 100%);
-  padding: 1em 1em 2.5em 1em;
+  padding: 1rem 1rem 2.5rem;
   border-radius: 20px;
-  box-shadow: 0 25px 25px 0 rgba(0, 0, 0, 0.0477);
+  box-shadow: 0 25px 25px rgba(0, 0, 0, 0.0477);
 }
 
 img {
   display: block;
-  width: 288px;
-  height: 288px;
+  width: 100%;
   border-radius: 10px;
 }
 
 .qr-code-details {
   display: flex;
   flex-direction: column;
-  gap: 16px;
-  padding: 0 1em 0 1em;
+  gap: 1rem;
+  padding: 0 1rem;
 }
 
 h1,
@@ -54,18 +52,18 @@ h2 {
 
 .title {
   color: hsl(218, 44%, 22%);
-  font-size: 22px;
+  font-size: 1.375rem;
   font-weight: 700;
 }
 
 .subtitle {
   color: hsl(216, 15%, 48%);
-  font-size: 15px;
+  font-size: 0.9375rem;
   font-weight: 400;
 }
 
 .attribution {
-  font-size: 11px; 
+  font-size: 0.6875rem;
   text-align: center;
   font-family: "Outfit", sans-serif;
 }
