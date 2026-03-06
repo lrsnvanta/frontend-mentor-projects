@@ -22,7 +22,7 @@ body {
 .container {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 1.5rem;
   width: 320px;
   height: 499px;
   background-color: hsl(0, 0%, 100%);
