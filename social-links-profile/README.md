@@ -19,7 +19,7 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ### Screenshot
 
-![My end result of attempting the QR Code challenge from Frontend Mentor](./social-links-profile/)
+![My end result of attempting the Social links profile challenge from Frontend Mentor](./social-links-profile.png)
 
 ### Links
 
