@@ -19,8 +19,11 @@ This is a solution to the [Results Summary Component challenge on Frontend Mento
 
 ### Screenshot
 
+### Desktop
 ![My end result of attempting the QR Code challenge from Frontend Mentor](./results-summary-component.jpeg)
+### Mobile
 ![Mobile](./results-summary-component-mobile.jpeg)
+### Active
 ![Active](./results-summary-component-active.png)
 
 ### Links
