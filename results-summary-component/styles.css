@@ -196,7 +196,10 @@ li p {
    .result {
     width: 100%;
     border-radius: 0 0 32px 32px;
+    height: 100vh;
    }
 
-   
+   .summary {
+    height: 100vh;
+   }
 }
