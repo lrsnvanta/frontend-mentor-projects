@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --primary-green-500: hsl(158, 36%, 37%);
+    --primary-green-700: hsl(158, 42%, 18%);
+    --neutral-black: hsl(212, 21%, 14%);
+    --neutral-grey: hsl(228, 12%, 48%);
+    --neutral-cream: hsl(30, 38%, 92%);
+    --neutral-white: hsl(0, 0%, 100%);
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--neutral-cream);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    min-height: 100dvh;
+}
+
+main {
+    background-color: var(--neutral-white);
+    max-width: 400px;
+    min-width: 315px;
+    
+    margin: 1rem;
+    border-radius: 10px;
+}
+
+main > :first-child {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    object-fit: cover;
+}
+
+main img:nth-child(2) {
+    display: none;
+}
+
+h1 {
+    font-family: Fraunces;
+    line-height: 1;
+}
+
+.description {
+    display: grid;
+    gap: 1.2rem;
+    padding: 2rem;
+}
+/* PERFUME */
+.description > :first-child {
+    font-family: Montserrat;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 5px;
+}
+/* Sentence */
+.description p:nth-of-type(2) {
+    font-family: Montserrat;
+    font-size: .9rem;
+    line-height: 1.7;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+/* $149.99 */
+.price p:first-of-type {
+    font-family: Fraunces;
+    font-size: 1.9rem;
+    font-weight: 700;
+    color: var(--primary-green-500);   
+}
+/* orignial price */
+.price p:last-of-type {
+    /* align-self: center; */
+    font-family: Montserrat;
+    font-size: 0.75rem;
+    text-decoration: line-through;
+}
+
+a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 13px;
+    background-color: var(--primary-green-500);
+    text-decoration: none;
+    color: #fff;
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 0.875rem;
+    text-align: center;
+    border-radius: 10px; 
+}
+
+a:active {
+    background-color: var(--primary-green-700);
+}
+
+.cart {
+    width: 16px;
+    height: 16px;
+}
+
+@media screen and (min-width: 961px){
+    main {
+        display: grid;
+        min-width: 600px;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    main > img:first-child {
+        display: none;
+    }
+
+    main > img:nth-child(2) {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px 0 0 10px;
+    }
+}
