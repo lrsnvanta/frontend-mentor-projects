@@ -190,7 +190,7 @@ li p {
    .container {
     flex-direction: column;
     border-radius: 0;
-    height: auto;
+    height: 100%;
    }
     
    .result {
